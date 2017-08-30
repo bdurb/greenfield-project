@@ -44,7 +44,7 @@ render() {
     <div>
       <h1 className='fun'>Go ahead and Click to Conclusions</h1>
       <p className = 'conc'>{ this.state.concs[this.state.randomConc].conc }</p>
-      <button onClick = { this.getRandom }>Click</button>
+      <button className = 'btn' onClick = { this.getRandom }>Pull the Trigger</button>
     </div>
   );
 };
