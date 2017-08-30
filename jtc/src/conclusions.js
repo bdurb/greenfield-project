@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './conclusions.css';
 
 class conclusion extends Component {
   constructor(props) {
@@ -41,7 +42,7 @@ getRandom = () => {
 render() {
   return (
     <div>
-      <h1>Go ahead and Click to Conclusions</h1>
+      <h1 className='fun'>Go ahead and Click to Conclusions</h1>
       <p className = 'conc'>{ this.state.concs[this.state.randomConc].conc }</p>
       <button onClick = { this.getRandom }>Click</button>
     </div>
